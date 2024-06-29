@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f3f3f3;
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    width: 500px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 30px;
+    box-shadow: 0px 0px 40px #000000;
+}
+
+.card .imagen-mostrada {
+    width: 257px;
+    transform: rotate(-15deg);
+}
+
+.card .titulo {
+    margin-top: 30px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.card .cores {
+    margin-top: 40px;
+    display: inline-flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card .tallas-contenedor {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    font-display: column;
+}
+
+.card .tallas {
+    margin-top: 20px;
+    display: flex;
+    margin-right: 20px;
+    justify-content: space-between;
+}
+
+.card .tallas .talla {
+    background-color: #BEBEBE;
+    padding: 15px;
+    border-radius: 1000px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 10px;
+}
+
+.card .tallas .talla:hover {
+    background-color: rgba(138, 138, 138, 0.9);
+}
+
+.card .tallas .talla.active {
+    background-color: #fc0000;
+    color: #f3f3f3;
+    transform: translateY(-20px);
+}
+
+.imagens {
+    display: flex;
+}
+
+.imagens img {
+    width: 187px;
+    transform: rotate(-25deg);
+    transition: all 0.3s ease;
+    position: relative;
+    cursor: pointer;
+}
